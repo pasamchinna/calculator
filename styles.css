@@ -1,0 +1,29 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+ }
+ body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, green, yellow)
+ }
+ .chinna-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+ }
+
+ .chinna-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(30, 26, 77)
+ }
+
+ .chinna-grid > button:hover {
+   background-color: white;
+ }
